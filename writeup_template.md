@@ -20,7 +20,7 @@ The goals / steps of this project are the following:
 [image7]: ./test/sign4.jpg "Traffic Sign 4"
 [image8]: ./test/sign5.jpg "Traffic Sign 5"
 [image9]: ./examples/layer_0.png "Sign"
-[image10]: ./examples/layer_1.png "Layer 2"
+[image10]: ./examples/layer_1.png "Layer 1"
 
 
 ## Rubric Points
@@ -91,10 +91,7 @@ My final model consisted of the following layers:
 | Dropouts				| 50%											|
 | Logits				| Input = 84. Output = 43.         				|
 | Softmax				| To get cros entropy       					|
-|						|												|
-|						|												|
  
-
 To train the model, I used:
 *optimizer: AdamOptimizer
 *batch size: 128
@@ -156,10 +153,43 @@ The model was able to correctly guess 4 of the 5 traffic signs, which gives an a
 
 The code for making predictions on my final model is located in the 11th cell of the Ipython notebook.
 
+6.71345 Ahead only
+6.69856 Yield
+2.03834 Priority road
+1.15855 No passing
+0.230938 No vehicles
+
+108.606 Yield
+19.0339 No vehicles
+9.14488 Priority road
+-1.477 Ahead only
+-9.27126 Keep right
+
+18.899 Bumpy road
+13.5459 Bicycles crossing
+2.95245 Stop
+2.74061 Turn left ahead
+2.31678 Ahead only
+
+35.4564 Priority road
+1.05222 Roundabout mandatory
+-1.97664 End of all speed and passing limits
+-3.1961 End of no passing
+-6.56845 Speed limit (50km/h)
+
+8.6213 Children crossing
+7.22221 Ahead only
+6.03431 Go straight or right
+5.15688 Bicycles crossing
+3.66011 Yield
+
+
 
 ### (Optional) Visualizing the Neural Network (See Step 4 of the Ipython notebook for more details)
 First conv layer: simple shapes. I can guess a sign.
 Second conv layer: complex shapes. Looks more like combination of pixels. I can not guess the sign.
+
 ![alt text][image9]
+
 ![alt text][image10]
 
