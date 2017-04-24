@@ -153,35 +153,56 @@ The model was able to correctly guess 4 of the 5 traffic signs, which gives an a
 
 The code for making predictions on my final model is located in the 11th cell of the Ipython notebook.
 
-6.71345 Ahead only
-6.69856 Yield
-2.03834 Priority road
-1.15855 No passing
-0.230938 No vehicles
+For the first image, the model is relatively sure that this is a stop sign (probability of 0.9), but the image does not contain a stop sign. It contains Stop sign. There is no Stop sign in top 5 probabilities. The top five soft max probabilities were
 
-108.606 Yield
-19.0339 No vehicles
-9.14488 Priority road
--1.477 Ahead only
--9.27126 Keep right
+| Probability         	|     Prediction	        					| 
+|:---------------------:|:---------------------------------------------:| 
+| .90         			| Priority road									| 
+| .07     				| Yield 										|
+| .01					| No passing									|
+| .004	      			| Ahead only					 				|
+| .003				    | Turn left ahead     							|
 
-18.899 Bumpy road
-13.5459 Bicycles crossing
-2.95245 Stop
-2.74061 Turn left ahead
-2.31678 Ahead only
 
-35.4564 Priority road
-1.05222 Roundabout mandatory
--1.97664 End of all speed and passing limits
--3.1961 End of no passing
--6.56845 Speed limit (50km/h)
+For the second image, the model is relatively sure that this is a Yield sign (probability of 1), and the image does contain a Yield sign. The top five soft max probabilities were
 
-8.6213 Children crossing
-7.22221 Ahead only
-6.03431 Go straight or right
-5.15688 Bicycles crossing
-3.66011 Yield
+| Probability         	|     Prediction	        					| 
+|:---------------------:|:---------------------------------------------:| 
+| 1.0         			| Yield 										| 
+| .0     				| Speed limit (20km/h) 							|
+| .0					| Speed limit (30km/h)							|
+| .0	      			| Speed limit (50km/h)					 		|
+| .0				    | Speed limit (60km/h)     						|
+
+For the third image, the model is relatively sure that this is a Bumpy road sign (probability of 0.999), and the image does contain a Bumpy road. The top five soft max probabilities were
+
+| Probability         	|     Prediction	        					| 
+|:---------------------:|:---------------------------------------------:| 
+| .999         			| Bumpy road									| 
+| .0     				| Bicycles crossing 							|
+| .0					| Dangerous curve to the left					|
+| .0	      			| Go straight or right					 		|
+| .0				    | Traffic signals    							|
+
+For the fourth image, the model is relatively sure that this is a Priority road sign (probability of 0.994), and the image does contain a Bumpy road. The top five soft max probabilities were
+
+| Probability         	|     Prediction	        					| 
+|:---------------------:|:---------------------------------------------:| 
+| .994         			| Priority road									| 
+| .002     				| Roundabout mandatory 							|
+| .001					| Speed limit (50km/h)							|
+| .0003	      			| Speed limit (30km/h)							|
+| .0				    | Keep right 									|
+
+For the fifth image, the model is relatively sure that this is a Yield sign (probability of 0.994), but the image does not contain a Yield. It contains turn left. There is no turn left in top 5 probabilities. Go straight or right the most closest. The top five soft max probabilities were
+
+| Probability         	|     Prediction	        					| 
+|:---------------------:|:---------------------------------------------:| 
+| .97         			| Yield 										| 
+| .0077     			| Go straight or right 							|
+| .0072					| Road work 									|
+| .0042	      			| Ahead only					 				|
+| .0003				    | Turn left ahead     							|
 
 
 
